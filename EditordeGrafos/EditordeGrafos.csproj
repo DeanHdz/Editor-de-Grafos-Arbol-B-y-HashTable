@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{62BD31AD-0022-41A7-9842-4150B66388EE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EditordeGrafos</RootNamespace>
+    <AssemblyName>Editor De Grafos</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AtributosGrafo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AtributosGrafo.Designer.cs">
+      <DependentUpon>AtributosGrafo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTree.Designer.cs">
+      <DependentUpon>BTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cubeta.cs" />
+    <Compile Include="Edge.cs" />
+    <Compile Include="Bezier.cs" />
+    <Compile Include="Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editor.Designer.cs">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigNodAri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigNodAri.Designer.cs">
+      <DependentUpon>ConfigNodAri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HashTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HashTable.Designer.cs">
+      <DependentUpon>HashTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mapa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mapa.Designer.cs">
+      <DependentUpon>Mapa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph.cs" />
+    <Compile Include="Letra-Numero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Letra-Numero.Designer.cs">
+      <DependentUpon>Letra-Numero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarMatriz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrarMatriz.Designer.cs">
+      <DependentUpon>MostrarMatriz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="muestraDFS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="muestraDFS.Designer.cs">
+      <DependentUpon>muestraDFS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="muestraEuler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="muestraEuler.Designer.cs">
+      <DependentUpon>muestraEuler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="muestraFloyd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="muestraFloyd.Designer.cs">
+      <DependentUpon>muestraFloyd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="muestraGrados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="muestraGrados.Designer.cs">
+      <DependentUpon>muestraGrados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="muestramatriz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="muestramatriz.Designer.cs">
+      <DependentUpon>muestramatriz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="muestraPrim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="muestraPrim.Designer.cs">
+      <DependentUpon>muestraPrim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NodeP.cs" />
+    <Compile Include="NodeR.cs" />
+    <Compile Include="NuevaTabla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevaTabla.Designer.cs">
+      <DependentUpon>NuevaTabla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pagina.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registro.cs" />
+    <Compile Include="TablaDireccion.cs" />
+    <EmbeddedResource Include="AtributosGrafo.resx">
+      <DependentUpon>AtributosGrafo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BTree.resx">
+      <DependentUpon>BTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor.resx">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigNodAri.resx">
+      <DependentUpon>ConfigNodAri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HashTable.resx">
+      <DependentUpon>HashTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Letra-Numero.resx">
+      <DependentUpon>Letra-Numero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mapa.resx">
+      <DependentUpon>Mapa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarMatriz.resx">
+      <DependentUpon>MostrarMatriz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="muestraDFS.resx">
+      <DependentUpon>muestraDFS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="muestraEuler.resx">
+      <DependentUpon>muestraEuler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="muestraFloyd.resx">
+      <DependentUpon>muestraFloyd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="muestraGrados.resx">
+      <DependentUpon>muestraGrados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="muestramatriz.resx">
+      <DependentUpon>muestramatriz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="muestraPrim.resx">
+      <DependentUpon>muestraPrim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevaTabla.resx">
+      <DependentUpon>NuevaTabla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrossHair-Mouse-Cursor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_out.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_node.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dirigido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nodirigido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movernodo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abrir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borragrafo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cambio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\complemento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\configNodAri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminaarista.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminaGrafo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminanodo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ex2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\muevegrafo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npartita.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\petersen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plantilla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\programa.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\propiedades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\petersen2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cimitarra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dodecahedro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\k33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuitoEuler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coloreado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caminoEuler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertakn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertawn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertacn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dijkstra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aristaColoreada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topologico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\halmiton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradoGrafo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconGrados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DFS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circuitoEuler1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
